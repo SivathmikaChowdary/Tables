@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Tables</title>
+  <style>
+    table.simple {
+      border-collapse: collapse;
+      width: 60%;
+      background-color: #bde6e2;
+      margin-bottom: 40px;
+    }
+
+    table.simple th,
+    table.simple td {
+      border: 1px solid #bde6e2;
+      text-align: left;
+      padding: 8px;
+    }
+
+    table.rounded {
+      border-collapse: separate;
+      border-spacing: 0;
+      background-color: #bde6e2;
+      width: 60%;
+    }
+
+    table.rounded th,
+    table.rounded td {
+      border: 1px solid #579492;
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Rounded corners for first and last row/column */
+    table.rounded th:first-child {
+      border-top-left-radius: 15px;
+    }
+    table.rounded th:last-child {
+      border-top-right-radius: 15px;
+    }
+    table.rounded tr:last-child td:first-child {
+      border-bottom-left-radius: 15px;
+    }
+    table.rounded tr:last-child td:last-child {
+      border-bottom-right-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="simple">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <table class="rounded">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+
+
